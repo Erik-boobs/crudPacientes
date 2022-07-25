@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/api HTTP/1.1
+
+###
+GET http://localhost:3000/api/1 HTTP/1.1
+
+###
+POST http://localhost:3000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Julian",
+    "apellido": "Villegas",
+    "cama": 5,
+    "fecha_ingreso": "2022-07-05",
+    "diagnostico": "padece de sus facultades mentales"
+}
+
+###
+DELETE http://localhost:3000/api/3 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Erik Daniel",
+    "apellido": "Mendez E",
+    "cama": 10,
+    "fecha_ingreso": "2022-07-29",
+    "diagnostico": "Tiene cancer de estomago"
+}
